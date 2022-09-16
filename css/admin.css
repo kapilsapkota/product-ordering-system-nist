@@ -1,0 +1,80 @@
+/* 
+    Author : Kapil Sapkota
+    Contact : kapilsapktoa1001@gmail.com
+ */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.text-center{
+    text-align: center;
+}
+.logo{
+    width: 15%;
+    float: left;
+}
+.img-responsive{
+    width: 100%;
+}
+.menu-bar{
+    border-bottom: 2px solid gray;
+}
+.menu{
+    line-height: 100px;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+a{
+    text-decoration: none;
+    color: #ff6b81;
+    font-weight: bold;
+}
+a:hover{
+    color: #ff4757;
+}
+/* Footer CSS */
+.footer{
+    background-color: #ff6b81;
+    color: #fff;
+    padding: 1%;
+}
+.footer-link{
+    color: #5352ed;
+}
+.footer-link:hover{
+    color: aqua;
+}
+/* Content CSS */
+.content{
+    background-color: #a4b0be;
+    padding: 1% 0;
+}
+.col-4{
+    background-color: white;
+    width: 18%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+.heading{
+    color:#ff4757;
+    font-weight: 900;
+}
+.table{
+    width: 100%;
+}

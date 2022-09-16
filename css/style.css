@@ -1,0 +1,248 @@
+/* 
+    Author : Kapil Sapkota
+    Contact : kapilsapkota1001@gmail.com
+
+/* Css for All*/
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-rounded{
+    border-radius: 10px;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #ff6b81;
+}
+a:hover{
+    color : #ff4757;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+.btn{
+    padding: 1% ;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+}
+.btn-primary:hover{
+    color: white;
+}
+h2{
+    color:#57606f;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.3rem;
+}
+
+/* CSS for NavBar */
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 0 1%;
+    font-weight: bold;
+}
+/* CSs For NAvBar */
+
+/* CSS for search bar */
+.search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+    background-position: center;
+}
+.search input[type=search]{
+    width: 50%;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+.card{
+    width: 28%;
+    margin: 2%;
+    float: left;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    left: 45%;
+    bottom: 40px;
+}
+
+/* CSS for Food menu */
+.food-menu{
+    padding: 4% 0;
+    background: whitesmoke;
+}
+.box{
+    width: 43%;
+    float: left;
+    margin: 1%;
+    padding: 2%;
+    background: white;
+    border-radius: 10px;
+}
+.box-img{
+    width: 20%;
+    float: left;
+}
+.box-desc{
+    width: 70%;
+    float:left;
+    margin: 2%;
+}
+.item-price{
+    font-size: 1.3rem;
+    padding: 1% 0;
+}
+.item-desc{
+    font-size: 1rem;
+    color: gray;
+    padding-bottom: 1%;
+}
+.social{
+    padding: 4% 0;
+}
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 0 1%;
+}
+.contact-heading{
+    padding: 3% 0;
+}
+.form-horizontal{
+    width: 60%;
+    margin: 4% auto;
+    padding: 4%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+.form-horizontal label{
+    width: 100%;
+    padding: 10% 0;
+    margin: 14% 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.form-control{
+    border: none;
+    width: 98%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1% auto;
+}
+.form-horizontal button{
+    width: 50%;
+    /* margin-left: 26%; */
+    margin-top: 2%;
+}
+fieldset{
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2% 0;
+}
+fieldset .btn{
+    margin-left: 24%;
+}
+
+/* Responsive or Mobile Devices */
+@media screen and (max-width: 768px) {
+    .logo{
+        width: 80%;
+        float: none;
+        padding: 1% 0;
+    }
+    .menu{
+        font-size: 1rem;
+        float: none;
+        text-align: center!important;
+        font-weight: unset;
+    }
+    .search{
+        padding: 10% 0;
+    }
+    .search input[type=search]{
+        width: 90%;
+        padding: 2% 0;
+        margin: 4% 0;
+        font-size: 1rem;
+        line-height: 10px;
+    }
+    .btn{
+        width: 90%;
+    }
+    .categories{
+        padding: 10% 0;
+    }
+    .card{
+        width: 90%;
+        padding: 0 5%;
+    }
+    .float-text{
+        left: 40%;
+    }
+    .food-menu{
+        padding: 10% 0;
+    }
+    h2{
+        padding: 10% 0;
+    }
+    .box{
+        width: 90%;
+        padding: 4%;
+        margin-bottom: 15px;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    .social{
+        padding: 10% 0;
+    }
+}
