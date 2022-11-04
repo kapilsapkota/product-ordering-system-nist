@@ -2,8 +2,12 @@
      <!-- Body Section Starts -->
      <section class="content">
         <div class="wrapper">
-            <strong class="heading">MANAGE USER</strong>
-
+            <h1 class="heading">MANAGE USER</h1>
+            <br>
+            <?php include('config/session.php') ?>
+            <br>
+                <a class="btn btn-secondary user-add" href="add-user.php">Add User</a>
+            <br>
 
             <!-- Users Table -->
             <table class="table">
@@ -23,12 +27,12 @@
                         <td>aashis</td>
                         <td>P@$$w0rd</td>
                         <td>
-                            <button class="btn btn-primary">
+                            <a class="btn btn-primary" href="#">
                                 Edit User
-                            </button>
-                            <button class="btn btn-secondary">
+                            </a>
+                            <a class="btn btn-danger" href="#">
                                 Delete User
-                            </button>
+                            </a>
                         </td>
                     </tr>
                 </tbody>
