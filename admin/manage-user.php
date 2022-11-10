@@ -45,6 +45,9 @@
                                     <td><?php echo $full_name; ?></td>
                                     <td><?php echo $user_name; ?></td>
                                     <td>
+                                    <a class="btn btn-secondary" href="<?php  echo APP_URL; ?>admin/update-password.php?id=<?php echo $id; ?>">
+                                Change Password
+                            </a>
                                     <a class="btn btn-primary" href="<?php  echo APP_URL; ?>admin/edit-user.php?id=<?php echo $id; ?>">
                                 Edit User
                             </a>

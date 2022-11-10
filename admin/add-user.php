@@ -58,10 +58,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$execute = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 		//create database
 			if($execute = TRUE){
-				$_SESSION['message'] = "User Added Successfully";
+				$_SESSION['message'] = "<div class='success'>User Added Successfully</div>";
                 header('location:'.APP_URL.'admin/manage-user.php');
 			}else{
-				$_SESSION['message'] = "Could not Add User Instantly. Try Again";
+				$_SESSION['message'] = "<div class='error'>Could not Add User Instantly. Try Again</div>";
                 header('location:'.APP_URL.'admin/add-user.php');
 			}
 
