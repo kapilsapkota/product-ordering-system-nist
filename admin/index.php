@@ -3,8 +3,11 @@
      <!-- Body Section Starts -->
      <section class="content">
         <div class="wrapper">
-            <strong class="heading">DASHBOARD</strong>
-
+            <h1 class="heading">DASHBOARD</h1>
+            <br>
+            <?php 
+                include('config/session.php');
+            ?>
             <div class="clearfix"></div>
            
             <div class="col-4 text-center">

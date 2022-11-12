@@ -1,10 +1,10 @@
-<?php include('common/header.php') ?>
+<?php include('../common/header.php') ?>
      <!-- Body Section Starts -->
      <section class="content">
         <div class="wrapper">
             <h1 class="heading">MANAGE CATEGORY</h1>
             <br>
-            <?php include('config/session.php') ?>
+            <?php include('../config/session.php') ?>
             <br>
                 <a class="btn btn-secondary user-add" href="add-category.php">Add Category</a>
             <br>
@@ -39,32 +39,22 @@
                             while($rows = mysqli_fetch_assoc($exec)){
                                 $id = $rows['id'];
                                 $title = $rows['title'];
-                                $current_image = $rows['image_name'];
+                                $current_image = $rows['image'];
                                 $featured = $rows['featured'];
                                 $status = $rows['status'];
                                 ?>
                                 <tr>
                                     <td><?php echo $sn++; ?></td>
                                     <td><?php echo $title; ?></td>
-                                    <?php
-                                        if($current_image != "") {
-                                            ?>
-                                            <td>
-                                            <img width="100" height="100" src="../images/category/<?php echo $current_image; ?>" alt="<?php echo $title; ?>">
-                                            </td>
-                                            <?php
-                                        }else{
-                                           echo '<td>No Image Found</td>'; 
-                                        }
-                                    ?>
+                                    <td><?php echo $current_image; ?></td>
                                     <td><?php echo $featured; ?></td>
                                     <td><?php echo $status; ?></td>
                                     <td>
                                 
-                                    <a class="btn btn-primary" href="<?php  echo APP_URL; ?>admin/edit-category.php?id=<?php echo $id; ?>">
+                                    <a class="btn btn-primary" href="<?php  echo APP_URL; ?>admin/category/edit-category.php?id=<?php echo $id; ?>">
                                 Edit Category
                             </a>
-                                <a class="btn btn-danger" href="<?php  echo APP_URL; ?>admin/delete-category.php?id=<?php echo $id; ?>">
+                                <a class="btn btn-danger" href="<?php  echo APP_URL; ?>admin/category/delete-category.php?id=<?php echo $id; ?>">
                                     Delete Category
                                 </a>
                                     </td>
@@ -74,7 +64,7 @@
                             }
             
                         }else{
-                            echo '<tr><td colspan="6" class="text-center">No rows to display</td></tr>';
+                            echo '<tr><td colspan="4">No rows to display</td></tr>';
                         }
                         }
                     ?>

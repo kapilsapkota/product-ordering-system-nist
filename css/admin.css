@@ -126,10 +126,12 @@ a{
     text-align: right!important;
 }
 .success{
+    /* padding: 1%; */
     color: white;
     background-color: #2ed573;
 }
 .error{
+    /* padding: 1%; */
     color: white;
     background-color: #ff4757;
 }
